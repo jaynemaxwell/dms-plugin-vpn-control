@@ -57,4 +57,11 @@ PluginSettings {
         ]
         defaultValue: "toggle"
     }
+
+    ToggleSetting {
+        settingKey: "labelAlwaysShown"
+        label: I18n.trFor("vpnControl", "Always Display Label")
+        description: I18n.trFor("vpnControl", "Display potential VPN connection state even when disconnected")
+        defaultValue: false
+    }
 }
