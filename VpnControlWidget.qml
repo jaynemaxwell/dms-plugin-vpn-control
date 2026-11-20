@@ -17,6 +17,7 @@ PluginComponent {
     property bool showLabel: pluginData.showLabel ?? true
     property bool singleActive: pluginData.singleActive ?? true
     property string rightClickMode: pluginData.rightClickMode ?? "toggle"
+    property bool labelAlwaysShown: pluginData.labelAlwaysShown ?? false
 
     readonly property bool available: DMSNetworkService.vpnAvailable
     readonly property bool connected: DMSNetworkService.vpnConnected
@@ -111,7 +112,7 @@ PluginComponent {
             }
 
             StyledText {
-                visible: root.showLabel
+                visible: root.showLabel && (root.connected || root.labelAlwaysShown)
                 text: root.statusText
                 color: root.connected ? Theme.surfaceText : Theme.surfaceVariantText
                 font.pixelSize: Theme.fontSizeMedium
