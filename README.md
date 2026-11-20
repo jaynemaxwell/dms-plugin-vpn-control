@@ -24,7 +24,7 @@ NetworkManager VPNs — OpenVPN, WireGuard, and anything else NetworkManager can
 
 ```bash
 cd ~/.config/DankMaterialShell/plugins
-git clone https://github.com/schneipp/dms-plugin-vpn-control VpnControl
+git clone https://github.com/jaynemaxwell/dms-plugin-vpn-control
 ```
 
 Then in DMS Settings → Plugins, click "Scan for Plugins" and enable **VPN Control**. Add it to a bar section from
